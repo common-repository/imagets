@@ -1,0 +1,293 @@
+#imagets_manager{
+  background: #f9f9f9;
+}
+
+#imagets_thickbox{
+  display: none;
+}
+
+#imagets_manager * {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#imagets_manager .overflow{
+  overflow-y: scroll;
+  position: absolute;
+  width: calc(100% - 15px);
+  height: calc(100% - 55px);
+  padding: 20px 10px;
+  padding-right: 20px;
+}
+
+#imagets_manager.manager{
+  background: #f9f9f9;
+}
+
+#imagets_manager #logo{
+  float: right;
+  height: 25px;
+}
+
+#imagets_manager .mini-picture{
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius:3px;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  background-color:#fff;
+  overflow: hidden;
+  border:solid 1px #ccc;
+  margin-right: 10px;
+}
+
+#imagets_manager .mini-picture .water{
+  background: #fff;
+  width: 100%;
+  opacity: 0.8;
+  display: block;
+  height:100%;
+  transition: all 1s ease-in-out;
+}
+
+#imagets_manager .mini-picture .full{
+  height: 0%;
+}
+
+#imagets_manager .nothing{
+  opacity: 0.2;
+  text-align: center;
+  font-size: 20px;
+}
+
+#imagets_manager form{
+  padding: 17px;
+  background: #fff;
+  border-left:1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+
+#imagets_manager input, textarea{
+  box-shadow: none !important;
+}
+
+#imagets_manager footer{
+  background: #ededed;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 25px;
+  height: 54px;
+}
+
+#imagets_manager .waterImages{
+  height: 32px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#imagets_manager .images img{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 150px;
+  width: auto;
+  display: inline-block;
+}
+
+#imagets_manager .images{
+  background: #fff;
+  padding: 22px;
+  margin-top: 20px;
+  border:1px solid #ddd;
+}
+
+#imagets_manager .loading{
+  display: none;
+}
+
+#imagets_manager .item{
+  width: 148px;
+  height: 148px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  vertical-align:inherit;
+  background-size:100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius:7px;
+  box-shadow:0px 1px 3px #ccc;
+}
+
+#imagets_manager .images .active{
+  box-shadow: 0px 0px 9px #212198;
+}
+
+#imagets_manager .active .close_btn{
+  background: rgba(84,84,184,1);
+}
+
+#imagets_manager .close_btn{
+  margin: 5px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  cursor: pointer;
+}
+
+#imagets_manager .full_btn{
+  margin: 5px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  cursor: pointer;
+}
+
+#imagets_manager .btn-group{
+  margin-right: 10px;
+}
+
+#imagets_manager #sidebar{
+  position: fixed;
+  width: 300px;
+  right: 0px;
+  height: 100%;
+  background:#fff;
+  top: 0px;
+  z-index: 10;
+  box-shadow:0px 0px 10px #ccc;
+}
+
+#imagets_manager #sidebar h1{
+  background: #2977d9;
+  color: #fff;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin-top: 0px;
+}
+
+#imagets_manager .content{
+  padding: 10px 20px;
+}
+
+#imagets_manager .content ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#imagets_manager #chatEnter{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 260px;
+}
+
+#imagets_manager .mini-textbox{
+  padding:5px 10px;
+  border:none;
+  position:absolute;
+  margin-left:0px;
+  margin-top:123px;
+  width:148px;
+  border-radius:7px;
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
+  font-size:11px;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0px 1px 4px #ccc;
+  outline: none;
+}
+
+#imagets_manager .mini-textbox:focus{
+  background: rgba(255,255,255,1);
+}
+
+#imagets_manager #post-wrapper{
+  background: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  border:1px solid #ddd;
+}
+
+#imagets_manager .post{
+  height: 150px;
+  padding: 10px;
+  list-style: none;
+  margin-bottom: 20px;
+  border-radius:3px;
+}
+
+#imagets_manager .post .thumb{
+  width: 130px;
+  height: 130px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color:#ccc;
+  border-radius:2px;
+  float: left;
+}
+
+#imagets_manager .post .information{
+  float: left;
+  margin-left: 10px;
+  width: calc(100% - 140px);
+}
+
+#imagets_manager .marginBottom{
+  margin-bottom: 6px;
+}
+
+#imagets_manager .post .form-text{
+  height: 46px;
+}
+
+#imagets_manager #post-wrapper .active{
+  box-shadow: 0px 0px 9px #ccc;
+}
+
+#imagets_manager .featured{
+  box-shadow: 0px 0px 9px red !important;
+}
+
+#imagets_manager .previewBig{
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  z-index: 999;
+  display: none;
+  padding-top: 50px;
+}
+
+#imagets_manager .previewBig img{
+  max-width: 80%;
+  max-height: 80%;
+  background: #fff;
+  padding: 10px;
+  border-radius:5px;
+}
+
+#imagets_manager .error{
+  box-shadow: 0px 0px 40px red !important;
+}
+
+#imagets_manager .size{
+  color: #fff;
+  margin: 10px;
+  float: right;
+  font-size: 11px;
+  text-shadow:0px 0px 2px #000;
+}
